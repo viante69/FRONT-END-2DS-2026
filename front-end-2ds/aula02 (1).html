@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aual02 - menu hamburguer</title>
+
+
+    <style>
+        .navlinks a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* estilo do botao hamburguer */
+        .hamburguer{
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768){
+            .hamburguer {
+                display: block;
+            }
+
+            .navlinks{
+                display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px; /*altira da navbar*/
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            }
+
+            .navlinks.active{
+                display: flex;
+            }
+            
+        }
+
+
+
+        .navbar {
+           background-color: black;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 15px;
+        }
+        .logo {
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            /* estilo de links */
+
+            .nav links{
+                display: flex;/* exibe horizontalemnte o menu */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; 
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: 0;
+                padding: 0;
+            } 
+        
+        }
+
+    </style>
+    
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Meu site</div>
+
+        <!-- Botão Hamburguer para responsividade -->
+         <button class="Hamburguer" id="hamburguer-btn">
+            &#9776; <!-- Simbolo do icone -->
+         </button>
+
+        <!-- Lista de itens do menu --> 
+         <ul class="nav-links" id="nav-links">
+            <li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=eprsZCecSbI">inicio </a>
+                
+            </li>
+                 <a href="https://www.youtube.com/watch?v=eprsZCecSbI">sobre</a>
+            </li>
+            </li>
+                 <a href="https://www.youtube.com/shorts/YmMTRJVxOkg">serviços</a>
+            </li>
+        </li>
+        <a href="https://www.youtube.com/shorts/9pnpI-7YmV4">contato</a>
+        </li>
+           
+                
+                
+
+            
+         </ul>
+    </nav>
+
+    <div style=" padding: 20px;">
+        <h1>Contuedo da pagina</h1>
+        <p>Redimensione a janela do navegador para o menu mudar. </p>
+    </div>
+        <script>
+            alert("anjos sem paciencia")
+            //seleciona os elementos em html
+            const hamburguerBtn = documento.getElemntById('hamburger-btn')
+            const navlinkis = document.getElementById('nav-links')
+
+            //adicione um botão eo evento de clicl//
+
+                hamburguerBtn.addEventListener('clik'); () => {
+                navlinks.classList.toggle('active');
+                
+            }
+                
+        </script>
+
+
+</body>
+</html>
